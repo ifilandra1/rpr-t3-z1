@@ -1,9 +1,9 @@
 package ba.unsa.etf.rpr.tutorijal03;
 
-public class MedjunarodniBroj {
+public class MedunarodniBroj {
     private String drzava, broj;
 
-    public MedjunarodniBroj(String drzava, String broj) {
+    public MedunarodniBroj(String drzava, String broj) {
         this.drzava=drzava; this.broj=broj;
     }
 

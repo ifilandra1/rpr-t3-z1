@@ -3,8 +3,16 @@ package ba.unsa.etf.rpr.tutorijal03;
 public class FiksniBroj extends TelefonskiBroj {
 
     enum Grad {BIHAC,ORASJE,TUZLA,ZENICA,GORAZDE,TRAVNIK,MOSTAR,SIROKIBRIJEG,SARAJEVO,LIVNO,BRCKO };
-    private String broj;
-    private Grad grad;
+     String broj;
+     Grad grad;
+
+    public Grad getGrad() {
+        return grad;
+    }
+
+    public void setGrad(Grad grad) {
+        this.grad = grad;
+    }
 
     public FiksniBroj(Grad grad, String broj){
         this.grad=grad; this.broj=broj;
