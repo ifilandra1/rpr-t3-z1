@@ -5,11 +5,19 @@ import java.util.Objects;
 public class MobilniBroj extends TelefonskiBroj {
 
     private int mobilnaMreza;
-    private String broj;
+    public String broj;
     public MobilniBroj(int mobilnaMreza, String broj ) {
 
           this.mobilnaMreza=mobilnaMreza;
           this.broj=broj;
+    }
+
+    public String getBroj() {
+        return broj;
+    }
+
+    public void setBroj(String broj) {
+        this.broj = broj;
     }
 
     public String ispisi() {
@@ -17,6 +25,11 @@ public class MobilniBroj extends TelefonskiBroj {
         s+="0"+this.mobilnaMreza;
         s+="/";
         return s+this.broj;
+    }
+
+    public int compareTo(Object o) {
+        return this.getBroj().compareTo( (  (MobilniBroj) o ).getBroj() );
+
     }
 
     @Override

@@ -10,6 +10,20 @@ public class FiksniBroj extends TelefonskiBroj {
         return grad;
     }
 
+    public String getBroj() {
+        return broj;
+    }
+
+    public void setBroj(String broj) {
+        this.broj = broj;
+    }
+
+    public int compareTo(Object o) {
+
+        return this.getBroj().compareTo( ((FiksniBroj) o).getBroj()  );
+
+    }
+
     public void setGrad(Grad grad) {
         this.grad = grad;
     }
