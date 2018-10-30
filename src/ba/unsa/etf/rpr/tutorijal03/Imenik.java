@@ -4,6 +4,7 @@ import java.util.Map;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.HashSet;
+import java.util.TreeSet;
 
 public class Imenik {
 
@@ -48,13 +49,16 @@ return "";
            Iterator it=mapa.entrySet().iterator();
           while(it.hasNext()) {
               HashMap.Entry par = (HashMap.Entry)it.next();
-                    if( ((FiksniBroj) par.getValue()).getGrad() ==g ){
+                    if(      (par.getValue() instanceof FiksniBroj) &&  ((FiksniBroj) par.getValue()).getGrad() ==g ){
                         imena.add(  (String)par.getKey() );
 
                     }
 
           }
-          return imena;
+
+        Set<String> imena2 = new TreeSet<String>(imena);
+
+          return imena2;
     }
 
     Set <TelefonskiBroj> izGradaBrojevi (FiksniBroj.Grad g) {
@@ -63,12 +67,12 @@ return "";
            Iterator it= mapa.entrySet().iterator();
            while(it.hasNext()) {
                HashMap.Entry par = (HashMap.Entry)it.next();
-               if(     ((FiksniBroj) par.getValue()).getGrad()==g   ) {
+               if(  (par.getValue() instanceof FiksniBroj) &&  ((FiksniBroj) par.getValue()).getGrad()==g   ) {
                    brojevi.add(   (TelefonskiBroj)par.getValue() );
 
                }
-
            }
+
            return brojevi;
     }
 
