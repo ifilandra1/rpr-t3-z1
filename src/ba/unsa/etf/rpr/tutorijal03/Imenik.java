@@ -73,9 +73,9 @@ return "";
                }
            }
 
-           Set<TelefonskiBroj> brojevi2=new TreeSet<TelefonskiBroj>(brojevi);
+           return new TreeSet<TelefonskiBroj>(brojevi);
 
-           return brojevi2;
+
     }
 
 
