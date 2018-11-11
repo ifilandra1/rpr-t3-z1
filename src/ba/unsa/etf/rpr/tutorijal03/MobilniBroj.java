@@ -21,8 +21,8 @@ public class MobilniBroj extends TelefonskiBroj {
     }
 
     public String ispisi() {
-        String s="";
-        s+="0"+this.mobilnaMreza;
+
+       String s="0"+this.mobilnaMreza;
         s+="/";
         return s+this.broj;
     }
