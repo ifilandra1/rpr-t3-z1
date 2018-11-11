@@ -33,8 +33,8 @@ public class FiksniBroj extends TelefonskiBroj {
     }
 
     ;
-    String broj;
-    Grad grad;
+    private String broj;
+    private Grad grad;
 
     public Grad getGrad() {
         return grad;
