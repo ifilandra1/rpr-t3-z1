@@ -14,15 +14,15 @@ public class Imenik {
         return mapa;
     }
 
-    public void dodaj(String ime, TelefonskiBroj broj) {
+    final public void dodaj(String ime, TelefonskiBroj broj) {
        mapa.put(ime,broj);
     }
 
-    public String dajBroj (String ime){
+    final public String dajBroj (String ime){
          return mapa.get(ime).ispisi();
     }
 
-    public String DajIme (TelefonskiBroj broj) {
+    final public String DajIme (TelefonskiBroj broj) {
 
         Iterator it=mapa.entrySet().iterator();
         while(it.hasNext()) {
@@ -34,7 +34,7 @@ return "";
     }
 
 
-    String naSlovo(char s) {
+    final String naSlovo(char s) {
         String rijec = "";
         Iterator it=mapa.entrySet().iterator();
         int i=0;
@@ -47,7 +47,7 @@ return "";
        return rijec;
     }
 
-    Set <String> izGrada(FiksniBroj.Grad g) {
+    final Set <String> izGrada(FiksniBroj.Grad g) {
 
         Set<String> imena = new HashSet<String>();
            Iterator it=mapa.entrySet().iterator();
@@ -65,7 +65,7 @@ return "";
           return new TreeSet<String>(imena);
     }
 
-    Set <TelefonskiBroj> izGradaBrojevi (FiksniBroj.Grad g) {
+    final Set <TelefonskiBroj> izGradaBrojevi (FiksniBroj.Grad g) {
 
         Set<TelefonskiBroj> brojevi= new HashSet<TelefonskiBroj>();
            Iterator it= mapa.entrySet().iterator();
