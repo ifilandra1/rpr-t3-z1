@@ -39,7 +39,9 @@ public class Program {
             }
             System.out.println("Unesite 0 za kraj, 1 za nastavak");
             n=scan.nextInt();
-            if(n==0)break;
+            if(n==0){
+                break;
+            }
 
 
         }
