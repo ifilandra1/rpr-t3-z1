@@ -31,7 +31,7 @@ return "";
 
 
     String naSlovo(char s) {
-        String rijec = new String();
+        String rijec = "";
         Iterator it=mapa.entrySet().iterator();
         int i=0;
         while(it.hasNext()) {
