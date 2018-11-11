@@ -1,7 +1,11 @@
 package ba.unsa.etf.rpr.tutorijal03;
 
 public class MedunarodniBroj extends TelefonskiBroj {
-    public String drzava, broj;
+    private String drzava, broj;
+
+    public String getDrzava() {
+        return drzava;
+    }
 
     public MedunarodniBroj(String drzava, String broj) {
         this.drzava=drzava; this.broj=broj;
