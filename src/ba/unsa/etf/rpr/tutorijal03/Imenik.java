@@ -56,9 +56,9 @@ return "";
 
           }
 
-        Set<String> imena2 = new TreeSet<String>(imena);
 
-          return imena2;
+
+          return new TreeSet<String>(imena);
     }
 
     Set <TelefonskiBroj> izGradaBrojevi (FiksniBroj.Grad g) {
