@@ -8,7 +8,11 @@ import java.util.TreeSet;
 
 public class Imenik {
 
-    HashMap<String, TelefonskiBroj> mapa = new HashMap<>();
+   private HashMap<String, TelefonskiBroj> mapa = new HashMap<>();
+
+    public HashMap<String, TelefonskiBroj> getMapa() {
+        return mapa;
+    }
 
     public void dodaj(String ime, TelefonskiBroj broj) {
        mapa.put(ime,broj);
