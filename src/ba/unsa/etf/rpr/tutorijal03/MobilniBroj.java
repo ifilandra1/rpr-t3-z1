@@ -37,8 +37,12 @@ public class MobilniBroj extends TelefonskiBroj {
 
     @Override
     final public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()){
+            return false;
+        }
         MobilniBroj that = (MobilniBroj) o;
         return mobilnaMreza == that.mobilnaMreza &&
                 Objects.equals(broj, that.broj);
