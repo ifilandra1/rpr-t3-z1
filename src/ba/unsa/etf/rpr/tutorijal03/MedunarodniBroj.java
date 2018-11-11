@@ -11,24 +11,24 @@ public class MedunarodniBroj extends TelefonskiBroj {
         this.drzava=drzava; this.broj=broj;
     }
 
-    final public String getBroj() {
+    public final String getBroj() {
         return broj;
     }
 
-    final public void setBroj(String broj) {
+     public final void setBroj(String broj) {
         this.broj = broj;
     }
 
-    final public String ispisi() {
+    public final String ispisi() {
         return drzava+broj;
     }
 
-    final public int hashCode() {
+    public final int hashCode() {
 
         return 0;
     }
 
-    final public int compareTo(Object o) {
+    public final int compareTo(Object o) {
         MedunarodniBroj m=  (MedunarodniBroj) o;
         return this.getBroj().compareTo(m.getBroj());
     }
