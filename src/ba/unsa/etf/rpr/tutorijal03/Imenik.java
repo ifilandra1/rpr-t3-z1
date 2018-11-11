@@ -14,15 +14,15 @@ public class Imenik {
         return mapa;
     }
 
-    final public void dodaj(String ime, TelefonskiBroj broj) {
+    public final void dodaj(String ime, TelefonskiBroj broj) {
        mapa.put(ime,broj);
     }
 
-    final public String dajBroj (String ime){
+    public final String dajBroj (String ime){
          return mapa.get(ime).ispisi();
     }
 
-    final public String dajIme (TelefonskiBroj broj) {
+     public final String dajIme (TelefonskiBroj broj) {
 
         Iterator it=mapa.entrySet().iterator();
         while(it.hasNext()) {
