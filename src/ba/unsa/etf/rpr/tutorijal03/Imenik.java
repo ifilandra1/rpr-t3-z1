@@ -27,7 +27,9 @@ public class Imenik {
         Iterator it=mapa.entrySet().iterator();
         while(it.hasNext()) {
             Map.Entry par=(Map.Entry)it.next();
-            if(par.getValue().equals(broj)) return((String)par.getKey());
+            if(par.getValue().equals(broj)) {
+                return((String)par.getKey());
+            }
         }
 
 return "";
