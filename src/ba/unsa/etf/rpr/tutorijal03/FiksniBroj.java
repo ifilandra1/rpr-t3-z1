@@ -36,25 +36,25 @@ public class FiksniBroj extends TelefonskiBroj {
     private String broj;
     private Grad grad;
 
-    public Grad getGrad() {
+    final public Grad getGrad() {
         return grad;
     }
 
-    public String getBroj() {
+    final public String getBroj() {
         return broj;
     }
 
-    public void setBroj(String broj) {
+    final public void setBroj(String broj) {
         this.broj = broj;
     }
 
-    public int compareTo(Object o) {
+   final public int compareTo(Object o) {
 
         return this.getBroj().compareTo(((FiksniBroj) o).getBroj());
 
     }
 
-    public void setGrad(Grad grad) {
+    final public void setGrad(Grad grad) {
         this.grad = grad;
     }
 
@@ -65,7 +65,7 @@ public class FiksniBroj extends TelefonskiBroj {
 
     ;
 
-    public String ispisi() {
+    final public String ispisi() {
 
         String s = this.grad.getPoz();
         s += "/";
@@ -74,7 +74,7 @@ public class FiksniBroj extends TelefonskiBroj {
 
     ;
 
-    public int hashCode() {
+    final public int hashCode() {
 
         return 2;
     }
