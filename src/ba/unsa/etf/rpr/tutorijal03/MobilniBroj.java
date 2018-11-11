@@ -3,10 +3,13 @@ package ba.unsa.etf.rpr.tutorijal03;
 import java.util.Objects;
 
 public class MobilniBroj extends TelefonskiBroj {
+    public int getMobilnaMreza() {
+        return mobilnaMreza;
+    }
 
     private int mobilnaMreza;
-    public String broj;
-    public MobilniBroj(int mobilnaMreza, String broj ) {
+    private String broj;
+    private MobilniBroj(int mobilnaMreza, String broj ) {
 
           this.mobilnaMreza=mobilnaMreza;
           this.broj=broj;
