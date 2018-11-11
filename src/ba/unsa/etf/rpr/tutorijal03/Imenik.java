@@ -22,7 +22,7 @@ public class Imenik {
          return mapa.get(ime).ispisi();
     }
 
-    final public String DajIme (TelefonskiBroj broj) {
+    final public String dajIme (TelefonskiBroj broj) {
 
         Iterator it=mapa.entrySet().iterator();
         while(it.hasNext()) {
