@@ -9,34 +9,34 @@ public class MobilniBroj extends TelefonskiBroj {
 
     private int mobilnaMreza;
     private String broj;
-    private MobilniBroj(int mobilnaMreza, String broj ) {
+    public MobilniBroj(int mobilnaMreza, String broj ) {
 
           this.mobilnaMreza=mobilnaMreza;
           this.broj=broj;
     }
 
-    public String getBroj() {
+    final public String getBroj() {
         return broj;
     }
 
-    public void setBroj(String broj) {
+    final public void setBroj(String broj) {
         this.broj = broj;
     }
 
-    public String ispisi() {
+    final public String ispisi() {
 
        String s="0"+this.mobilnaMreza;
         s+="/";
         return s+this.broj;
     }
 
-    public int compareTo(Object o) {
+    final public int compareTo(Object o) {
         return this.getBroj().compareTo( (  (MobilniBroj) o ).getBroj() );
 
     }
 
     @Override
-    public boolean equals(Object o) {
+    final public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         MobilniBroj that = (MobilniBroj) o;
@@ -44,7 +44,7 @@ public class MobilniBroj extends TelefonskiBroj {
                 Objects.equals(broj, that.broj);
     }
 
-    public int hashCode() {
+    final public int hashCode() {
         return 0;
     }
 
