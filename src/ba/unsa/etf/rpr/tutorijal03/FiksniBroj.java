@@ -66,8 +66,8 @@ public class FiksniBroj extends TelefonskiBroj {
     ;
 
     public String ispisi() {
-        String s="";
-        s += this.grad.getPoz();
+
+        String s = this.grad.getPoz();
         s += "/";
         return s + this.broj;
     }
